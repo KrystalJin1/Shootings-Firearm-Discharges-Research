@@ -1,0 +1,1001 @@
+"dates","event_type","neighbourhood","injuries","deaths"
+2021-08-28,"firearm_discharge","Scarborough",0,0
+2020-04-13,"shooting_event","East York",2,1
+2020-09-12,"shooting_event","Scarborough",0,0
+2019-04-10,"firearm_discharge","Scarborough",0,0
+2021-02-01,"shooting_event","Downtown",1,0
+2021-08-31,"shooting_event","North York",1,0
+2018-06-02,"shooting_event","North York",0,0
+2022-10-21,"firearm_discharge","Etobicoke",0,0
+2021-03-16,"firearm_discharge","Etobicoke",0,0
+2018-02-16,"firearm_discharge","East York",0,0
+2020-02-29,"firearm_discharge","North York",0,0
+2020-10-23,"shooting_event","East York",1,1
+2019-10-09,"shooting_event","North York",2,0
+2021-12-10,"shooting_event","East York",1,1
+2021-06-01,"shooting_event","East York",0,0
+2018-04-28,"shooting_event","North York",2,0
+2021-09-15,"firearm_discharge","North York",0,0
+2021-11-16,"shooting_event","Etobicoke",0,0
+2019-07-24,"shooting_event","East York",0,0
+2019-05-15,"firearm_discharge","Downtown",0,0
+2023-08-25,"firearm_discharge","Downtown",0,0
+2023-06-14,"shooting_event","East York",1,0
+2019-06-24,"firearm_discharge","Etobicoke",0,0
+2022-04-25,"shooting_event","Etobicoke",0,0
+2022-02-20,"firearm_discharge","North York",0,0
+2020-12-15,"shooting_event","East York",1,0
+2023-11-25,"shooting_event","Downtown",1,0
+2020-07-27,"shooting_event","Downtown",1,0
+2021-08-01,"firearm_discharge","North York",0,0
+2021-11-06,"shooting_event","Downtown",5,0
+2021-02-26,"firearm_discharge","Scarborough",0,0
+2023-01-03,"firearm_discharge","Scarborough",0,0
+2019-03-22,"firearm_discharge","North York",0,0
+2018-05-25,"shooting_event","East York",0,0
+2022-08-13,"firearm_discharge","East York",0,0
+2020-02-25,"firearm_discharge","Etobicoke",0,0
+2023-12-26,"shooting_event","East York",0,0
+2020-02-21,"shooting_event","Scarborough",2,0
+2023-01-29,"firearm_discharge","Etobicoke",0,0
+2018-11-17,"firearm_discharge","Scarborough",0,0
+2020-12-03,"firearm_discharge","North York",0,0
+2021-06-19,"shooting_event","North York",1,0
+2022-09-13,"shooting_event","North York",2,0
+2020-12-24,"shooting_event","Downtown",2,0
+2023-05-20,"shooting_event","Downtown",0,0
+2020-10-19,"firearm_discharge","East York",0,0
+2023-12-20,"shooting_event","North York",0,0
+2020-07-16,"shooting_event","Etobicoke",1,0
+2022-04-03,"firearm_discharge","Scarborough",0,0
+2020-07-27,"firearm_discharge","Scarborough",0,0
+2019-01-29,"firearm_discharge","North York",0,0
+2023-04-15,"shooting_event","Scarborough",2,0
+2023-05-13,"firearm_discharge","Downtown",0,0
+2022-08-09,"firearm_discharge","Etobicoke",0,0
+2020-02-13,"firearm_discharge","Downtown",0,0
+2019-01-12,"shooting_event","Downtown",0,0
+2018-01-26,"shooting_event","North York",3,0
+2022-08-09,"shooting_event","East York",1,0
+2021-12-04,"firearm_discharge","East York",0,0
+2021-03-07,"shooting_event","North York",2,0
+2018-08-06,"firearm_discharge","East York",0,0
+2022-04-03,"firearm_discharge","Downtown",0,0
+2022-07-20,"shooting_event","Downtown",0,1
+2019-01-29,"firearm_discharge","Scarborough",0,0
+2020-08-30,"shooting_event","North York",1,0
+2023-07-07,"shooting_event","North York",0,0
+2019-02-27,"firearm_discharge","Etobicoke",0,0
+2019-07-13,"shooting_event","East York",0,0
+2020-01-25,"shooting_event","North York",1,0
+2019-02-10,"shooting_event","Scarborough",0,0
+2020-10-04,"firearm_discharge","Scarborough",0,0
+2020-02-18,"firearm_discharge","Scarborough",0,0
+2019-12-04,"shooting_event","Etobicoke",1,0
+2021-03-20,"firearm_discharge","East York",0,0
+2020-08-17,"firearm_discharge","Etobicoke",0,0
+2018-06-11,"firearm_discharge","Downtown",0,0
+2022-12-23,"shooting_event","Downtown",2,0
+2020-06-01,"shooting_event","East York",0,0
+2021-03-10,"firearm_discharge","Downtown",0,0
+2022-11-13,"shooting_event","Scarborough",1,0
+2021-04-08,"firearm_discharge","East York",0,0
+2020-04-27,"shooting_event","Scarborough",2,0
+2023-06-13,"shooting_event","East York",1,0
+2023-06-02,"firearm_discharge","East York",0,0
+2018-01-23,"shooting_event","East York",1,0
+2023-05-21,"firearm_discharge","Etobicoke",0,0
+2018-10-06,"shooting_event","Etobicoke",0,0
+2020-11-20,"firearm_discharge","Downtown",0,0
+2022-04-13,"shooting_event","Etobicoke",0,0
+2018-07-19,"shooting_event","Scarborough",2,0
+2018-11-11,"shooting_event","North York",0,0
+2023-08-01,"firearm_discharge","Downtown",0,0
+2018-04-07,"firearm_discharge","Etobicoke",0,0
+2023-07-24,"firearm_discharge","Scarborough",0,0
+2020-11-26,"firearm_discharge","Scarborough",0,0
+2018-11-24,"shooting_event","Downtown",3,0
+2019-05-27,"shooting_event","Etobicoke",1,0
+2020-04-02,"firearm_discharge","North York",0,0
+2019-02-19,"shooting_event","Etobicoke",2,0
+2021-01-24,"firearm_discharge","Etobicoke",0,0
+2021-01-16,"firearm_discharge","East York",0,0
+2018-12-11,"shooting_event","North York",3,0
+2021-03-02,"shooting_event","Downtown",4,0
+2021-12-24,"firearm_discharge","East York",0,0
+2021-02-12,"firearm_discharge","Scarborough",0,0
+2022-06-28,"firearm_discharge","North York",0,0
+2022-07-29,"firearm_discharge","Scarborough",0,0
+2020-06-05,"firearm_discharge","Scarborough",0,0
+2021-12-09,"shooting_event","Etobicoke",1,0
+2019-07-27,"shooting_event","Downtown",1,0
+2019-09-16,"shooting_event","Downtown",4,0
+2018-09-26,"shooting_event","Scarborough",0,1
+2020-01-25,"firearm_discharge","Scarborough",0,0
+2021-01-22,"firearm_discharge","Etobicoke",0,0
+2021-04-15,"firearm_discharge","Downtown",0,0
+2023-07-09,"shooting_event","North York",5,0
+2022-07-22,"firearm_discharge","East York",0,0
+2021-05-31,"shooting_event","Scarborough",0,0
+2019-11-16,"shooting_event","Scarborough",1,0
+2019-02-15,"firearm_discharge","North York",0,0
+2021-12-15,"shooting_event","Etobicoke",0,0
+2021-07-13,"shooting_event","Scarborough",1,0
+2022-06-27,"firearm_discharge","Etobicoke",0,0
+2023-02-02,"shooting_event","Downtown",2,0
+2021-01-24,"firearm_discharge","North York",0,0
+2019-05-08,"firearm_discharge","East York",0,0
+2019-05-06,"firearm_discharge","North York",0,0
+2020-05-29,"shooting_event","East York",0,1
+2021-09-09,"firearm_discharge","Etobicoke",0,0
+2022-09-18,"shooting_event","Etobicoke",1,0
+2018-12-19,"shooting_event","Etobicoke",0,0
+2023-02-09,"firearm_discharge","Etobicoke",0,0
+2021-03-14,"firearm_discharge","Downtown",0,0
+2023-12-24,"shooting_event","North York",0,0
+2020-01-10,"firearm_discharge","North York",0,0
+2021-09-09,"firearm_discharge","Scarborough",0,0
+2021-03-08,"firearm_discharge","North York",0,0
+2023-06-02,"shooting_event","East York",0,0
+2021-11-22,"firearm_discharge","Scarborough",0,0
+2021-02-15,"firearm_discharge","Scarborough",0,0
+2021-06-04,"firearm_discharge","Etobicoke",0,0
+2019-05-05,"shooting_event","Downtown",1,0
+2022-03-23,"firearm_discharge","North York",0,0
+2022-06-11,"shooting_event","Scarborough",2,0
+2019-08-16,"firearm_discharge","Downtown",0,0
+2021-10-03,"firearm_discharge","North York",0,0
+2020-09-06,"shooting_event","Downtown",1,0
+2018-03-28,"firearm_discharge","Downtown",0,0
+2020-03-29,"shooting_event","East York",1,0
+2022-10-26,"shooting_event","Scarborough",0,1
+2020-12-04,"shooting_event","Downtown",1,1
+2018-08-19,"shooting_event","Scarborough",1,0
+2022-01-05,"firearm_discharge","Downtown",0,0
+2018-08-25,"firearm_discharge","Scarborough",0,0
+2022-12-20,"shooting_event","Downtown",0,1
+2023-01-28,"firearm_discharge","Downtown",0,0
+2021-06-04,"firearm_discharge","North York",0,0
+2019-02-09,"firearm_discharge","North York",0,0
+2022-02-28,"shooting_event","East York",0,0
+2022-06-02,"shooting_event","North York",1,1
+2018-01-19,"firearm_discharge","Etobicoke",0,0
+2023-09-19,"firearm_discharge","Scarborough",0,0
+2019-02-05,"firearm_discharge","Etobicoke",0,0
+2019-05-14,"shooting_event","Etobicoke",1,0
+2019-02-27,"shooting_event","Etobicoke",2,0
+2021-04-29,"firearm_discharge","Downtown",0,0
+2021-07-29,"shooting_event","Etobicoke",1,0
+2020-10-01,"shooting_event","Scarborough",0,1
+2022-05-15,"firearm_discharge","Scarborough",0,0
+2018-02-04,"firearm_discharge","East York",0,0
+2020-07-12,"firearm_discharge","East York",0,0
+2018-05-18,"firearm_discharge","East York",0,0
+2018-03-31,"shooting_event","Etobicoke",0,0
+2022-01-12,"firearm_discharge","East York",0,0
+2021-07-09,"shooting_event","East York",1,0
+2023-08-25,"shooting_event","Etobicoke",0,0
+2022-08-11,"firearm_discharge","Scarborough",0,0
+2019-08-17,"shooting_event","East York",1,0
+2021-12-08,"shooting_event","North York",1,0
+2022-04-02,"shooting_event","Etobicoke",3,0
+2020-08-09,"firearm_discharge","Etobicoke",0,0
+2019-06-15,"shooting_event","East York",0,0
+2019-11-20,"firearm_discharge","East York",0,0
+2023-08-31,"firearm_discharge","East York",0,0
+2020-10-18,"firearm_discharge","Downtown",0,0
+2018-08-02,"firearm_discharge","Etobicoke",0,0
+2023-08-09,"firearm_discharge","Downtown",0,0
+2020-11-14,"shooting_event","Scarborough",1,0
+2022-11-02,"shooting_event","North York",0,0
+2019-05-03,"firearm_discharge","Downtown",0,0
+2020-07-03,"shooting_event","East York",0,0
+2023-11-06,"shooting_event","North York",0,0
+2020-10-01,"shooting_event","Scarborough",2,0
+2021-10-23,"shooting_event","Scarborough",1,0
+2021-12-04,"firearm_discharge","East York",0,0
+2020-10-19,"firearm_discharge","North York",0,0
+2020-06-20,"shooting_event","Etobicoke",1,0
+2023-07-15,"firearm_discharge","Downtown",0,0
+2018-03-11,"shooting_event","Etobicoke",0,0
+2018-04-30,"shooting_event","Downtown",0,0
+2022-03-10,"shooting_event","Scarborough",1,0
+2019-02-09,"shooting_event","Etobicoke",1,0
+2019-06-26,"shooting_event","North York",0,0
+2020-08-18,"firearm_discharge","Downtown",0,0
+2019-07-29,"firearm_discharge","East York",0,0
+2019-01-23,"firearm_discharge","East York",0,0
+2022-10-08,"firearm_discharge","East York",0,0
+2019-05-31,"firearm_discharge","North York",0,0
+2023-10-16,"shooting_event","North York",1,0
+2019-01-05,"firearm_discharge","North York",0,0
+2020-07-26,"firearm_discharge","Downtown",0,0
+2022-04-10,"shooting_event","Downtown",0,0
+2018-09-20,"firearm_discharge","Etobicoke",0,0
+2021-02-16,"firearm_discharge","Etobicoke",0,0
+2018-02-02,"firearm_discharge","North York",0,0
+2023-01-28,"firearm_discharge","North York",0,0
+2022-05-22,"firearm_discharge","Etobicoke",0,0
+2021-05-20,"shooting_event","Etobicoke",1,0
+2022-09-07,"shooting_event","Downtown",0,0
+2022-07-21,"firearm_discharge","Downtown",0,0
+2022-09-18,"shooting_event","Etobicoke",2,0
+2021-07-23,"firearm_discharge","East York",0,0
+2023-03-20,"shooting_event","East York",0,0
+2022-09-01,"firearm_discharge","East York",0,0
+2023-03-21,"firearm_discharge","Etobicoke",0,0
+2018-03-16,"shooting_event","North York",0,0
+2021-02-27,"firearm_discharge","Scarborough",0,0
+2018-04-03,"shooting_event","East York",1,0
+2023-05-22,"shooting_event","Downtown",3,0
+2022-08-02,"shooting_event","Scarborough",1,1
+2022-11-12,"firearm_discharge","Etobicoke",0,0
+2021-04-18,"shooting_event","East York",1,0
+2018-08-09,"shooting_event","North York",1,0
+2022-05-18,"firearm_discharge","Scarborough",0,0
+2020-02-21,"shooting_event","Scarborough",1,1
+2023-05-01,"shooting_event","East York",2,0
+2023-03-30,"shooting_event","East York",1,0
+2023-05-16,"firearm_discharge","East York",0,0
+2019-02-04,"firearm_discharge","Etobicoke",0,0
+2023-08-16,"firearm_discharge","Scarborough",0,0
+2018-10-04,"shooting_event","Scarborough",1,0
+2022-08-10,"shooting_event","Scarborough",1,0
+2019-09-26,"shooting_event","Etobicoke",1,0
+2022-02-05,"firearm_discharge","Downtown",0,0
+2021-09-05,"firearm_discharge","North York",0,0
+2020-01-30,"shooting_event","Etobicoke",1,1
+2019-05-27,"shooting_event","Downtown",1,0
+2020-08-31,"firearm_discharge","East York",0,0
+2019-09-28,"shooting_event","North York",0,0
+2023-01-07,"firearm_discharge","North York",0,0
+2020-12-28,"firearm_discharge","Downtown",0,0
+2020-08-11,"firearm_discharge","Etobicoke",0,0
+2022-11-25,"firearm_discharge","North York",0,0
+2020-04-11,"firearm_discharge","North York",0,0
+2019-09-07,"firearm_discharge","Etobicoke",0,0
+2021-04-22,"firearm_discharge","Etobicoke",0,0
+2021-04-27,"shooting_event","Etobicoke",1,0
+2020-01-27,"shooting_event","Etobicoke",0,0
+2020-12-26,"firearm_discharge","Scarborough",0,0
+2020-02-08,"shooting_event","Scarborough",0,0
+2022-12-04,"shooting_event","Scarborough",0,0
+2022-08-29,"firearm_discharge","North York",0,0
+2023-08-23,"firearm_discharge","East York",0,0
+2022-05-10,"firearm_discharge","North York",0,0
+2021-03-24,"firearm_discharge","North York",0,0
+2019-12-10,"firearm_discharge","Etobicoke",0,0
+2019-04-16,"firearm_discharge","Downtown",0,0
+2020-12-14,"firearm_discharge","Downtown",0,0
+2023-03-04,"firearm_discharge","North York",0,0
+2021-09-13,"firearm_discharge","Downtown",0,0
+2021-08-09,"shooting_event","Scarborough",0,0
+2021-07-24,"shooting_event","East York",1,0
+2022-07-25,"shooting_event","Etobicoke",0,0
+2021-12-09,"firearm_discharge","Scarborough",0,0
+2023-03-29,"firearm_discharge","North York",0,0
+2023-03-19,"firearm_discharge","Etobicoke",0,0
+2023-06-04,"shooting_event","Etobicoke",0,0
+2022-07-21,"shooting_event","North York",0,0
+2020-04-28,"shooting_event","Downtown",1,1
+2019-08-23,"shooting_event","North York",0,1
+2021-02-24,"shooting_event","Downtown",0,0
+2021-11-16,"firearm_discharge","Downtown",0,0
+2021-11-17,"firearm_discharge","North York",0,0
+2018-07-01,"shooting_event","Scarborough",1,1
+2018-11-30,"shooting_event","Downtown",0,0
+2022-01-05,"firearm_discharge","North York",0,0
+2020-11-10,"firearm_discharge","North York",0,0
+2020-06-09,"shooting_event","Downtown",0,0
+2022-05-02,"shooting_event","Downtown",0,0
+2022-01-24,"firearm_discharge","East York",0,0
+2021-09-19,"firearm_discharge","Etobicoke",0,0
+2020-10-12,"shooting_event","East York",0,1
+2020-12-27,"firearm_discharge","Scarborough",0,0
+2018-09-13,"firearm_discharge","North York",0,0
+2018-02-23,"firearm_discharge","Scarborough",0,0
+2022-02-03,"shooting_event","East York",0,0
+2020-01-19,"firearm_discharge","Downtown",0,0
+2022-07-19,"firearm_discharge","North York",0,0
+2019-05-25,"shooting_event","North York",1,1
+2023-04-18,"shooting_event","East York",0,0
+2019-06-01,"firearm_discharge","Scarborough",0,0
+2023-01-25,"shooting_event","Etobicoke",0,0
+2019-02-28,"shooting_event","East York",1,0
+2022-07-20,"shooting_event","East York",3,0
+2022-08-26,"shooting_event","Etobicoke",1,0
+2020-01-11,"shooting_event","Etobicoke",0,0
+2022-11-17,"firearm_discharge","North York",0,0
+2022-03-22,"firearm_discharge","Etobicoke",0,0
+2021-10-26,"firearm_discharge","Scarborough",0,0
+2019-06-18,"firearm_discharge","East York",0,0
+2020-09-27,"firearm_discharge","Etobicoke",0,0
+2018-09-20,"firearm_discharge","Scarborough",0,0
+2021-10-11,"shooting_event","Downtown",1,0
+2023-08-24,"shooting_event","North York",0,1
+2021-03-13,"firearm_discharge","Etobicoke",0,0
+2023-08-30,"shooting_event","North York",0,0
+2018-07-01,"shooting_event","Scarborough",3,0
+2022-03-17,"firearm_discharge","Etobicoke",0,0
+2021-09-16,"firearm_discharge","East York",0,0
+2021-09-07,"firearm_discharge","Downtown",0,0
+2019-12-17,"shooting_event","East York",0,0
+2022-10-09,"firearm_discharge","East York",0,0
+2020-08-25,"shooting_event","East York",0,0
+2019-04-10,"firearm_discharge","North York",0,0
+2020-10-22,"shooting_event","Etobicoke",0,0
+2018-12-11,"shooting_event","North York",1,0
+2019-06-23,"firearm_discharge","Downtown",0,0
+2019-03-14,"shooting_event","Downtown",0,0
+2018-03-21,"shooting_event","Scarborough",2,0
+2020-09-12,"shooting_event","Scarborough",2,1
+2019-10-30,"shooting_event","Downtown",2,0
+2019-01-29,"firearm_discharge","Downtown",0,0
+2018-09-26,"firearm_discharge","Etobicoke",0,0
+2022-01-04,"firearm_discharge","Etobicoke",0,0
+2023-11-06,"firearm_discharge","East York",0,0
+2020-07-26,"firearm_discharge","Scarborough",0,0
+2022-12-30,"firearm_discharge","East York",0,0
+2019-06-23,"shooting_event","Scarborough",3,0
+2021-11-03,"firearm_discharge","Scarborough",0,0
+2023-07-31,"shooting_event","Etobicoke",1,0
+2019-02-23,"firearm_discharge","East York",0,0
+2019-06-07,"shooting_event","North York",2,0
+2018-11-11,"firearm_discharge","Scarborough",0,0
+2022-07-11,"shooting_event","Downtown",0,0
+2018-06-09,"shooting_event","Etobicoke",2,0
+2023-10-27,"shooting_event","East York",2,0
+2018-12-24,"firearm_discharge","Etobicoke",0,0
+2022-03-24,"firearm_discharge","North York",0,0
+2019-02-16,"firearm_discharge","Scarborough",0,0
+2020-08-06,"shooting_event","Downtown",2,0
+2023-01-13,"firearm_discharge","Etobicoke",0,0
+2021-03-04,"shooting_event","Downtown",0,0
+2023-08-13,"shooting_event","Etobicoke",2,0
+2018-02-15,"firearm_discharge","North York",0,0
+2021-04-23,"shooting_event","Downtown",0,0
+2022-06-19,"firearm_discharge","Downtown",0,0
+2021-07-06,"shooting_event","East York",2,0
+2021-09-04,"shooting_event","Scarborough",0,0
+2023-04-08,"shooting_event","Scarborough",1,1
+2020-03-19,"firearm_discharge","Scarborough",0,0
+2018-07-23,"shooting_event","East York",1,0
+2020-01-19,"shooting_event","Scarborough",0,1
+2020-10-24,"shooting_event","East York",1,0
+2022-06-30,"shooting_event","Downtown",0,0
+2023-11-20,"firearm_discharge","Etobicoke",0,0
+2022-04-01,"firearm_discharge","East York",0,0
+2023-05-06,"shooting_event","Downtown",0,0
+2023-08-03,"firearm_discharge","Scarborough",0,0
+2018-02-08,"shooting_event","Scarborough",1,0
+2021-09-20,"firearm_discharge","Etobicoke",0,0
+2021-01-05,"firearm_discharge","Scarborough",0,0
+2018-11-29,"firearm_discharge","East York",0,0
+2020-03-21,"firearm_discharge","North York",0,0
+2018-05-06,"shooting_event","East York",1,0
+2020-04-11,"shooting_event","Downtown",2,0
+2019-05-14,"firearm_discharge","Scarborough",0,0
+2022-08-31,"shooting_event","East York",0,0
+2023-06-21,"firearm_discharge","Downtown",0,0
+2019-06-26,"shooting_event","Downtown",2,0
+2020-12-04,"firearm_discharge","East York",0,0
+2020-10-11,"shooting_event","East York",1,1
+2019-12-14,"shooting_event","North York",2,0
+2019-11-27,"firearm_discharge","Etobicoke",0,0
+2020-07-30,"firearm_discharge","North York",0,0
+2022-06-10,"firearm_discharge","North York",0,0
+2020-08-11,"firearm_discharge","East York",0,0
+2022-02-07,"shooting_event","East York",2,0
+2020-02-19,"shooting_event","North York",1,0
+2020-12-05,"firearm_discharge","East York",0,0
+2018-12-01,"shooting_event","East York",2,0
+2023-10-08,"firearm_discharge","Downtown",0,0
+2022-03-22,"firearm_discharge","Etobicoke",0,0
+2019-03-03,"shooting_event","Downtown",1,0
+2018-05-16,"shooting_event","North York",0,0
+2022-10-10,"shooting_event","East York",0,0
+2019-04-23,"shooting_event","North York",2,0
+2019-05-30,"shooting_event","East York",0,0
+2023-11-12,"shooting_event","East York",1,0
+2018-01-21,"firearm_discharge","East York",0,0
+2021-05-16,"firearm_discharge","Scarborough",0,0
+2020-01-31,"firearm_discharge","Scarborough",0,0
+2019-09-23,"shooting_event","Etobicoke",1,0
+2021-11-04,"shooting_event","Scarborough",1,0
+2022-06-25,"firearm_discharge","Etobicoke",0,0
+2019-03-29,"shooting_event","East York",2,0
+2022-02-17,"shooting_event","Scarborough",0,0
+2023-10-06,"firearm_discharge","East York",0,0
+2022-02-27,"shooting_event","Downtown",1,0
+2018-06-30,"shooting_event","East York",2,0
+2023-03-11,"firearm_discharge","Scarborough",0,0
+2021-08-16,"firearm_discharge","Etobicoke",0,0
+2022-07-09,"firearm_discharge","Etobicoke",0,0
+2021-07-20,"firearm_discharge","Scarborough",0,0
+2023-09-24,"firearm_discharge","East York",0,0
+2021-08-05,"firearm_discharge","North York",0,0
+2020-10-11,"shooting_event","Downtown",2,0
+2022-03-14,"firearm_discharge","North York",0,0
+2019-08-08,"shooting_event","Downtown",0,0
+2020-10-21,"firearm_discharge","North York",0,0
+2022-02-14,"firearm_discharge","Etobicoke",0,0
+2021-06-06,"shooting_event","North York",0,0
+2021-07-14,"shooting_event","Etobicoke",0,0
+2020-08-19,"firearm_discharge","Scarborough",0,0
+2023-07-04,"shooting_event","North York",1,1
+2021-12-07,"firearm_discharge","Etobicoke",0,0
+2023-02-20,"firearm_discharge","East York",0,0
+2023-08-13,"shooting_event","Downtown",3,0
+2021-11-02,"firearm_discharge","Downtown",0,0
+2019-10-05,"firearm_discharge","Scarborough",0,0
+2021-02-15,"firearm_discharge","North York",0,0
+2018-07-02,"shooting_event","East York",1,0
+2021-05-10,"firearm_discharge","Etobicoke",0,0
+2018-03-08,"firearm_discharge","Etobicoke",0,0
+2023-04-16,"shooting_event","Scarborough",0,0
+2018-11-01,"firearm_discharge","Scarborough",0,0
+2019-03-15,"shooting_event","North York",1,0
+2021-01-10,"firearm_discharge","Downtown",0,0
+2022-12-11,"firearm_discharge","Etobicoke",0,0
+2020-10-17,"firearm_discharge","Scarborough",0,0
+2018-06-01,"firearm_discharge","Scarborough",0,0
+2020-06-12,"shooting_event","East York",1,0
+2022-04-28,"shooting_event","East York",1,0
+2019-02-20,"firearm_discharge","Scarborough",0,0
+2021-05-22,"shooting_event","North York",0,0
+2021-06-24,"shooting_event","Downtown",2,1
+2021-01-30,"firearm_discharge","Scarborough",0,0
+2021-12-18,"shooting_event","Etobicoke",0,0
+2018-07-03,"firearm_discharge","Scarborough",0,0
+2018-10-19,"shooting_event","Etobicoke",0,1
+2021-12-02,"shooting_event","East York",1,0
+2022-01-01,"firearm_discharge","Etobicoke",0,0
+2023-12-24,"firearm_discharge","North York",0,0
+2021-01-14,"firearm_discharge","Downtown",0,0
+2018-09-06,"firearm_discharge","Etobicoke",0,0
+2020-06-21,"firearm_discharge","North York",0,0
+2023-10-06,"firearm_discharge","Downtown",0,0
+2020-06-05,"firearm_discharge","Etobicoke",0,0
+2021-01-03,"firearm_discharge","East York",0,0
+2018-11-12,"shooting_event","Scarborough",3,0
+2023-11-29,"shooting_event","East York",2,0
+2020-04-29,"firearm_discharge","North York",0,0
+2018-10-09,"firearm_discharge","East York",0,0
+2018-03-11,"firearm_discharge","Scarborough",0,0
+2018-02-16,"firearm_discharge","Scarborough",0,0
+2022-12-23,"firearm_discharge","Etobicoke",0,0
+2022-04-07,"shooting_event","Etobicoke",1,0
+2022-04-29,"firearm_discharge","North York",0,0
+2022-04-10,"shooting_event","Downtown",1,0
+2021-07-06,"firearm_discharge","Etobicoke",0,0
+2022-08-10,"shooting_event","Etobicoke",2,0
+2020-09-06,"shooting_event","Scarborough",0,0
+2022-02-01,"firearm_discharge","East York",0,0
+2022-11-27,"firearm_discharge","Downtown",0,0
+2018-03-02,"firearm_discharge","Scarborough",0,0
+2022-11-25,"shooting_event","North York",0,0
+2018-02-03,"firearm_discharge","North York",0,0
+2020-10-20,"shooting_event","North York",0,0
+2023-01-11,"shooting_event","North York",0,0
+2022-10-08,"firearm_discharge","East York",0,0
+2023-01-27,"shooting_event","Scarborough",0,0
+2018-11-03,"shooting_event","Scarborough",1,0
+2019-01-24,"firearm_discharge","North York",0,0
+2021-04-28,"shooting_event","North York",1,0
+2023-06-30,"shooting_event","Downtown",1,0
+2022-08-25,"shooting_event","North York",0,0
+2023-07-09,"firearm_discharge","East York",0,0
+2022-07-23,"shooting_event","North York",1,0
+2023-03-12,"firearm_discharge","Etobicoke",0,0
+2019-10-02,"firearm_discharge","Etobicoke",0,0
+2018-09-15,"firearm_discharge","North York",0,0
+2018-04-17,"firearm_discharge","North York",0,0
+2018-11-01,"firearm_discharge","Downtown",0,0
+2021-07-03,"shooting_event","North York",1,0
+2022-11-16,"firearm_discharge","Etobicoke",0,0
+2021-12-31,"firearm_discharge","East York",0,0
+2019-07-05,"shooting_event","Etobicoke",1,0
+2019-06-29,"firearm_discharge","Etobicoke",0,0
+2020-02-20,"firearm_discharge","North York",0,0
+2019-10-03,"shooting_event","North York",5,0
+2022-08-26,"shooting_event","Etobicoke",3,0
+2019-11-01,"shooting_event","East York",0,0
+2019-02-10,"firearm_discharge","Downtown",0,0
+2021-06-16,"firearm_discharge","East York",0,0
+2022-10-01,"shooting_event","Downtown",0,0
+2022-08-11,"firearm_discharge","North York",0,0
+2018-06-20,"firearm_discharge","Scarborough",0,0
+2023-10-10,"shooting_event","Scarborough",1,0
+2018-08-05,"shooting_event","Scarborough",1,0
+2018-01-13,"firearm_discharge","Etobicoke",0,0
+2021-10-08,"firearm_discharge","Etobicoke",0,0
+2019-02-15,"firearm_discharge","Scarborough",0,0
+2018-09-18,"firearm_discharge","Etobicoke",0,0
+2022-07-21,"shooting_event","Etobicoke",0,0
+2022-09-04,"firearm_discharge","Downtown",0,0
+2023-05-18,"shooting_event","North York",0,0
+2023-06-03,"shooting_event","Etobicoke",1,0
+2020-03-21,"shooting_event","Scarborough",0,1
+2023-08-04,"firearm_discharge","Etobicoke",0,0
+2018-05-01,"firearm_discharge","Downtown",0,0
+2022-11-06,"shooting_event","Etobicoke",0,0
+2023-04-27,"firearm_discharge","North York",0,0
+2019-01-27,"firearm_discharge","Etobicoke",0,0
+2020-01-08,"firearm_discharge","Scarborough",0,0
+2022-05-26,"shooting_event","Etobicoke",0,0
+2019-07-25,"firearm_discharge","Downtown",0,0
+2018-11-16,"firearm_discharge","East York",0,0
+2020-12-18,"firearm_discharge","North York",0,0
+2019-12-01,"shooting_event","North York",1,0
+2018-12-10,"firearm_discharge","Downtown",0,0
+2019-08-15,"shooting_event","East York",0,0
+2019-03-10,"shooting_event","Etobicoke",0,0
+2023-08-08,"firearm_discharge","East York",0,0
+2018-05-20,"firearm_discharge","North York",0,0
+2021-06-09,"firearm_discharge","Etobicoke",0,0
+2020-07-08,"firearm_discharge","Etobicoke",0,0
+2021-08-11,"shooting_event","East York",2,0
+2022-01-31,"shooting_event","Scarborough",2,0
+2021-04-14,"firearm_discharge","East York",0,0
+2021-08-30,"firearm_discharge","Etobicoke",0,0
+2023-09-07,"firearm_discharge","Etobicoke",0,0
+2022-02-02,"shooting_event","Scarborough",2,0
+2019-11-09,"firearm_discharge","East York",0,0
+2021-03-27,"firearm_discharge","East York",0,0
+2018-01-07,"shooting_event","Etobicoke",1,0
+2018-10-01,"firearm_discharge","Scarborough",0,0
+2020-09-13,"firearm_discharge","Scarborough",0,0
+2023-03-31,"firearm_discharge","Scarborough",0,0
+2021-12-25,"shooting_event","Etobicoke",0,0
+2020-06-17,"firearm_discharge","Etobicoke",0,0
+2023-12-22,"shooting_event","East York",0,1
+2018-04-12,"shooting_event","East York",1,0
+2020-05-04,"firearm_discharge","Downtown",0,0
+2019-05-20,"shooting_event","East York",0,0
+2022-06-14,"firearm_discharge","East York",0,0
+2020-06-10,"shooting_event","Downtown",1,0
+2018-11-29,"firearm_discharge","Downtown",0,0
+2020-04-14,"shooting_event","Scarborough",1,0
+2018-05-11,"shooting_event","Etobicoke",2,0
+2022-05-08,"firearm_discharge","North York",0,0
+2020-06-05,"shooting_event","Scarborough",0,0
+2022-10-10,"shooting_event","Scarborough",0,0
+2020-07-24,"shooting_event","Scarborough",0,0
+2019-09-12,"shooting_event","Downtown",2,0
+2021-11-07,"firearm_discharge","Etobicoke",0,0
+2023-03-01,"shooting_event","Scarborough",0,0
+2020-11-02,"shooting_event","North York",1,0
+2020-08-10,"shooting_event","Etobicoke",0,0
+2019-10-18,"shooting_event","Etobicoke",0,0
+2022-05-12,"firearm_discharge","Etobicoke",0,0
+2019-05-10,"firearm_discharge","Scarborough",0,0
+2019-06-24,"shooting_event","Scarborough",0,0
+2019-05-09,"firearm_discharge","Downtown",0,0
+2020-01-12,"firearm_discharge","Downtown",0,0
+2020-03-16,"firearm_discharge","Etobicoke",0,0
+2018-06-25,"firearm_discharge","Etobicoke",0,0
+2018-01-14,"firearm_discharge","Downtown",0,0
+2021-08-04,"shooting_event","East York",1,1
+2021-02-16,"shooting_event","Etobicoke",0,0
+2018-09-06,"firearm_discharge","Etobicoke",0,0
+2019-05-16,"firearm_discharge","East York",0,0
+2020-12-26,"firearm_discharge","Scarborough",0,0
+2018-03-04,"firearm_discharge","Etobicoke",0,0
+2023-12-03,"firearm_discharge","East York",0,0
+2018-03-19,"shooting_event","Downtown",3,0
+2022-12-08,"shooting_event","North York",0,0
+2023-09-10,"firearm_discharge","Scarborough",0,0
+2020-06-23,"firearm_discharge","East York",0,0
+2020-12-23,"firearm_discharge","Etobicoke",0,0
+2020-02-06,"shooting_event","East York",3,0
+2021-08-28,"shooting_event","Scarborough",2,0
+2018-03-12,"shooting_event","North York",1,0
+2022-07-01,"firearm_discharge","North York",0,0
+2021-09-08,"firearm_discharge","North York",0,0
+2021-02-19,"firearm_discharge","North York",0,0
+2023-02-11,"firearm_discharge","Scarborough",0,0
+2020-09-17,"shooting_event","East York",1,0
+2020-04-17,"firearm_discharge","Scarborough",0,0
+2021-01-10,"firearm_discharge","Scarborough",0,0
+2018-10-29,"firearm_discharge","North York",0,0
+2021-09-16,"firearm_discharge","Etobicoke",0,0
+2019-10-27,"firearm_discharge","Etobicoke",0,0
+2022-03-23,"shooting_event","East York",1,0
+2019-02-20,"shooting_event","Scarborough",1,0
+2023-01-31,"firearm_discharge","East York",0,0
+2023-05-11,"shooting_event","North York",3,0
+2022-07-05,"firearm_discharge","Downtown",0,0
+2019-02-13,"firearm_discharge","Scarborough",0,0
+2022-07-20,"shooting_event","Etobicoke",0,0
+2020-09-20,"shooting_event","Etobicoke",0,0
+2020-06-03,"shooting_event","Scarborough",0,0
+2021-04-19,"shooting_event","Scarborough",2,0
+2018-12-13,"shooting_event","Downtown",1,0
+2021-02-14,"shooting_event","Etobicoke",0,0
+2023-12-28,"shooting_event","North York",0,0
+2019-03-02,"firearm_discharge","Etobicoke",0,0
+2018-05-08,"shooting_event","Etobicoke",1,0
+2018-10-20,"shooting_event","Downtown",1,0
+2021-02-27,"firearm_discharge","Scarborough",0,0
+2022-02-15,"shooting_event","Downtown",1,1
+2018-06-14,"firearm_discharge","Etobicoke",0,0
+2021-05-23,"shooting_event","North York",1,1
+2021-12-12,"firearm_discharge","Scarborough",0,0
+2020-09-17,"shooting_event","Downtown",0,0
+2019-07-27,"firearm_discharge","Scarborough",0,0
+2023-06-21,"firearm_discharge","Downtown",0,0
+2023-08-12,"shooting_event","East York",0,0
+2020-03-10,"shooting_event","Etobicoke",3,0
+2018-12-21,"shooting_event","Scarborough",2,0
+2019-12-06,"shooting_event","Etobicoke",0,0
+2023-12-21,"shooting_event","East York",4,0
+2021-11-30,"shooting_event","Scarborough",1,0
+2018-10-02,"shooting_event","North York",1,0
+2022-11-12,"firearm_discharge","Scarborough",0,0
+2020-01-13,"firearm_discharge","East York",0,0
+2022-03-06,"firearm_discharge","Downtown",0,0
+2021-07-13,"firearm_discharge","Etobicoke",0,0
+2023-05-25,"shooting_event","East York",2,0
+2022-07-10,"firearm_discharge","Scarborough",0,0
+2018-12-28,"firearm_discharge","East York",0,0
+2020-04-17,"firearm_discharge","Downtown",0,0
+2020-06-02,"shooting_event","Downtown",0,0
+2021-05-10,"shooting_event","Downtown",1,0
+2019-06-29,"firearm_discharge","East York",0,0
+2020-06-27,"firearm_discharge","Etobicoke",0,0
+2018-03-30,"shooting_event","Downtown",0,0
+2020-08-12,"shooting_event","North York",0,0
+2023-08-28,"firearm_discharge","Etobicoke",0,0
+2021-01-13,"shooting_event","North York",0,0
+2019-03-27,"shooting_event","East York",1,0
+2018-06-12,"firearm_discharge","Downtown",0,0
+2021-05-10,"shooting_event","Etobicoke",1,0
+2022-06-13,"shooting_event","North York",0,0
+2020-06-15,"firearm_discharge","Scarborough",0,0
+2023-02-18,"shooting_event","East York",0,1
+2018-08-13,"firearm_discharge","North York",0,0
+2019-10-11,"firearm_discharge","Downtown",0,0
+2023-11-20,"shooting_event","Scarborough",0,0
+2020-09-01,"shooting_event","North York",0,0
+2018-11-02,"shooting_event","Downtown",1,0
+2018-10-14,"firearm_discharge","East York",0,0
+2022-08-21,"shooting_event","Downtown",1,0
+2021-08-19,"firearm_discharge","Downtown",0,0
+2020-02-23,"shooting_event","Etobicoke",1,0
+2022-08-22,"firearm_discharge","Scarborough",0,0
+2021-07-23,"firearm_discharge","North York",0,0
+2020-01-07,"firearm_discharge","Downtown",0,0
+2022-10-14,"firearm_discharge","Etobicoke",0,0
+2020-09-08,"firearm_discharge","East York",0,0
+2023-08-13,"shooting_event","East York",0,0
+2020-08-04,"firearm_discharge","Etobicoke",0,0
+2020-06-30,"firearm_discharge","Downtown",0,0
+2023-04-23,"firearm_discharge","North York",0,0
+2019-07-30,"firearm_discharge","East York",0,0
+2023-12-02,"shooting_event","Downtown",0,0
+2019-07-01,"firearm_discharge","Scarborough",0,0
+2020-04-27,"shooting_event","Etobicoke",2,0
+2021-05-15,"firearm_discharge","North York",0,0
+2018-02-09,"shooting_event","Scarborough",0,1
+2022-10-17,"shooting_event","North York",1,0
+2020-07-08,"shooting_event","Etobicoke",3,1
+2021-10-14,"firearm_discharge","Downtown",0,0
+2018-08-15,"firearm_discharge","Scarborough",0,0
+2018-09-01,"shooting_event","North York",2,0
+2021-08-15,"shooting_event","Scarborough",0,0
+2018-03-30,"firearm_discharge","Downtown",0,0
+2018-08-18,"firearm_discharge","Downtown",0,0
+2018-08-24,"firearm_discharge","Downtown",0,0
+2020-12-29,"firearm_discharge","East York",0,0
+2018-01-18,"shooting_event","Scarborough",1,1
+2019-06-24,"shooting_event","Etobicoke",0,0
+2020-01-08,"firearm_discharge","North York",0,0
+2023-07-20,"shooting_event","North York",1,0
+2018-03-07,"firearm_discharge","Scarborough",0,0
+2018-01-24,"shooting_event","Etobicoke",0,0
+2022-09-20,"shooting_event","Downtown",1,0
+2022-09-12,"firearm_discharge","Etobicoke",0,0
+2022-04-13,"shooting_event","Downtown",0,0
+2022-06-07,"firearm_discharge","Scarborough",0,0
+2020-01-03,"firearm_discharge","Scarborough",0,0
+2020-06-01,"firearm_discharge","Scarborough",0,0
+2020-03-10,"firearm_discharge","Downtown",0,0
+2020-10-08,"firearm_discharge","East York",0,0
+2023-04-25,"firearm_discharge","Etobicoke",0,0
+2019-07-14,"firearm_discharge","Scarborough",0,0
+2019-01-11,"firearm_discharge","Downtown",0,0
+2020-07-06,"firearm_discharge","Downtown",0,0
+2023-09-14,"firearm_discharge","North York",0,0
+2020-11-25,"shooting_event","Scarborough",1,0
+2019-02-14,"firearm_discharge","Etobicoke",0,0
+2020-02-08,"shooting_event","East York",2,0
+2020-04-20,"firearm_discharge","East York",0,0
+2018-07-14,"shooting_event","Downtown",1,0
+2023-08-18,"firearm_discharge","Etobicoke",0,0
+2023-10-01,"firearm_discharge","North York",0,0
+2020-02-12,"shooting_event","Downtown",4,0
+2018-11-24,"firearm_discharge","Etobicoke",0,0
+2022-10-24,"shooting_event","East York",0,0
+2018-02-13,"firearm_discharge","North York",0,0
+2022-05-29,"firearm_discharge","East York",0,0
+2023-01-21,"shooting_event","Etobicoke",1,0
+2019-09-16,"shooting_event","Downtown",1,0
+2018-08-07,"shooting_event","Scarborough",0,0
+2020-02-14,"shooting_event","Etobicoke",1,0
+2023-01-30,"firearm_discharge","East York",0,0
+2021-05-11,"shooting_event","Downtown",1,0
+2023-10-24,"firearm_discharge","North York",0,0
+2020-02-23,"firearm_discharge","Scarborough",0,0
+2022-05-21,"shooting_event","East York",0,0
+2022-10-21,"shooting_event","East York",0,1
+2018-06-02,"shooting_event","North York",1,0
+2022-03-29,"firearm_discharge","East York",0,0
+2018-07-24,"shooting_event","North York",1,0
+2019-07-03,"firearm_discharge","East York",0,0
+2021-10-28,"firearm_discharge","East York",0,0
+2019-02-01,"shooting_event","North York",0,0
+2021-11-02,"firearm_discharge","Scarborough",0,0
+2020-11-03,"firearm_discharge","Etobicoke",0,0
+2018-06-09,"shooting_event","Etobicoke",0,0
+2018-04-22,"shooting_event","Scarborough",2,0
+2023-11-03,"firearm_discharge","Etobicoke",0,0
+2022-07-23,"shooting_event","North York",1,1
+2022-02-01,"shooting_event","East York",0,0
+2021-09-18,"shooting_event","East York",1,0
+2020-02-15,"shooting_event","East York",3,0
+2022-10-06,"shooting_event","East York",0,0
+2021-02-07,"firearm_discharge","Etobicoke",0,0
+2021-04-21,"shooting_event","East York",2,0
+2019-07-22,"shooting_event","North York",1,0
+2019-01-21,"firearm_discharge","North York",0,0
+2023-11-12,"shooting_event","Scarborough",0,0
+2021-09-29,"firearm_discharge","Downtown",0,0
+2022-09-05,"firearm_discharge","North York",0,0
+2020-06-01,"shooting_event","East York",0,0
+2021-01-21,"firearm_discharge","North York",0,0
+2020-05-13,"shooting_event","North York",1,0
+2021-09-18,"shooting_event","Etobicoke",1,0
+2020-05-21,"shooting_event","Downtown",0,0
+2023-02-09,"shooting_event","Scarborough",0,0
+2021-05-10,"firearm_discharge","East York",0,0
+2019-03-01,"firearm_discharge","North York",0,0
+2020-11-26,"shooting_event","Downtown",0,0
+2020-06-08,"shooting_event","North York",0,0
+2023-05-03,"firearm_discharge","North York",0,0
+2021-06-08,"shooting_event","East York",1,0
+2018-09-27,"shooting_event","North York",0,0
+2023-06-07,"shooting_event","Downtown",0,0
+2018-01-23,"firearm_discharge","East York",0,0
+2019-08-15,"shooting_event","East York",0,0
+2018-03-09,"shooting_event","East York",1,0
+2018-09-26,"shooting_event","Scarborough",3,0
+2022-10-23,"firearm_discharge","Downtown",0,0
+2019-04-10,"firearm_discharge","Scarborough",0,0
+2022-09-26,"shooting_event","Etobicoke",2,0
+2020-05-14,"firearm_discharge","Scarborough",0,0
+2019-02-26,"shooting_event","East York",1,0
+2020-01-12,"firearm_discharge","Scarborough",0,0
+2023-08-23,"firearm_discharge","Scarborough",0,0
+2022-06-15,"firearm_discharge","Downtown",0,0
+2022-01-04,"firearm_discharge","East York",0,0
+2018-06-20,"shooting_event","East York",0,0
+2018-07-23,"shooting_event","Etobicoke",0,0
+2018-10-02,"firearm_discharge","Scarborough",0,0
+2023-01-12,"shooting_event","Scarborough",0,0
+2019-04-28,"firearm_discharge","East York",0,0
+2022-09-27,"firearm_discharge","Etobicoke",0,0
+2019-03-16,"firearm_discharge","East York",0,0
+2020-10-29,"shooting_event","North York",1,0
+2020-04-20,"shooting_event","East York",0,0
+2021-04-28,"firearm_discharge","Scarborough",0,0
+2023-10-28,"shooting_event","North York",1,1
+2023-10-17,"shooting_event","East York",0,1
+2020-03-22,"shooting_event","Scarborough",0,0
+2018-08-08,"firearm_discharge","East York",0,0
+2018-11-10,"shooting_event","Downtown",0,0
+2020-09-15,"firearm_discharge","Downtown",0,0
+2022-03-30,"firearm_discharge","Scarborough",0,0
+2019-10-18,"firearm_discharge","North York",0,0
+2020-03-29,"firearm_discharge","East York",0,0
+2018-12-25,"firearm_discharge","Downtown",0,0
+2018-11-29,"firearm_discharge","Etobicoke",0,0
+2022-09-22,"firearm_discharge","North York",0,0
+2019-12-14,"shooting_event","North York",1,0
+2020-09-05,"shooting_event","Etobicoke",0,0
+2021-02-09,"firearm_discharge","Scarborough",0,0
+2023-07-15,"shooting_event","East York",0,0
+2021-11-22,"shooting_event","Scarborough",2,0
+2022-10-11,"firearm_discharge","Scarborough",0,0
+2019-11-03,"shooting_event","Downtown",2,0
+2021-08-23,"firearm_discharge","Downtown",0,0
+2018-04-04,"firearm_discharge","Scarborough",0,0
+2022-03-28,"shooting_event","East York",1,0
+2020-10-06,"firearm_discharge","East York",0,0
+2021-10-12,"firearm_discharge","Scarborough",0,0
+2018-12-13,"shooting_event","Downtown",0,0
+2023-03-03,"shooting_event","Scarborough",0,1
+2018-10-01,"shooting_event","Etobicoke",3,0
+2018-03-11,"shooting_event","East York",2,0
+2022-04-13,"firearm_discharge","North York",0,0
+2022-04-21,"firearm_discharge","Downtown",0,0
+2020-09-27,"shooting_event","Etobicoke",1,0
+2018-05-26,"shooting_event","East York",1,0
+2018-10-27,"firearm_discharge","Etobicoke",0,0
+2018-02-26,"firearm_discharge","East York",0,0
+2018-01-14,"shooting_event","Downtown",2,0
+2022-01-02,"shooting_event","Scarborough",2,0
+2019-01-30,"firearm_discharge","Downtown",0,0
+2020-07-02,"shooting_event","Downtown",1,0
+2018-07-30,"shooting_event","North York",2,0
+2023-05-03,"shooting_event","Etobicoke",1,0
+2021-07-27,"firearm_discharge","Downtown",0,0
+2021-10-05,"firearm_discharge","North York",0,0
+2021-11-01,"firearm_discharge","Scarborough",0,0
+2018-12-30,"firearm_discharge","East York",0,0
+2022-02-26,"firearm_discharge","Downtown",0,0
+2018-10-08,"firearm_discharge","Scarborough",0,0
+2020-08-09,"firearm_discharge","Etobicoke",0,0
+2020-10-29,"shooting_event","Scarborough",0,0
+2022-11-22,"shooting_event","East York",1,0
+2019-06-18,"firearm_discharge","Etobicoke",0,0
+2019-01-04,"shooting_event","North York",0,0
+2018-09-23,"shooting_event","Scarborough",1,0
+2020-03-16,"firearm_discharge","North York",0,0
+2020-09-22,"shooting_event","Scarborough",2,0
+2023-07-15,"shooting_event","Etobicoke",0,0
+2020-05-19,"shooting_event","East York",2,1
+2018-04-23,"firearm_discharge","Scarborough",0,0
+2021-11-28,"shooting_event","Scarborough",1,1
+2020-08-21,"firearm_discharge","North York",0,0
+2023-04-26,"firearm_discharge","Downtown",0,0
+2018-08-27,"shooting_event","Scarborough",0,1
+2018-02-22,"shooting_event","North York",1,0
+2023-10-28,"firearm_discharge","Scarborough",0,0
+2020-12-24,"shooting_event","Etobicoke",1,0
+2022-08-08,"firearm_discharge","Scarborough",0,0
+2021-07-01,"firearm_discharge","North York",0,0
+2023-12-05,"firearm_discharge","East York",0,0
+2021-01-02,"firearm_discharge","Downtown",0,0
+2020-07-01,"firearm_discharge","East York",0,0
+2023-08-27,"firearm_discharge","East York",0,0
+2020-01-04,"firearm_discharge","Scarborough",0,0
+2021-06-04,"firearm_discharge","Downtown",0,0
+2023-03-12,"shooting_event","North York",3,0
+2022-02-10,"firearm_discharge","North York",0,0
+2023-05-31,"firearm_discharge","North York",0,0
+2022-10-08,"firearm_discharge","North York",0,0
+2023-01-22,"firearm_discharge","East York",0,0
+2023-08-14,"shooting_event","North York",0,0
+2020-09-12,"firearm_discharge","North York",0,0
+2023-10-24,"shooting_event","North York",0,0
+2021-01-03,"shooting_event","Etobicoke",0,0
+2020-08-26,"shooting_event","North York",1,1
+2021-10-18,"firearm_discharge","Etobicoke",0,0
+2023-03-07,"shooting_event","North York",2,0
+2018-09-03,"shooting_event","Scarborough",1,1
+2019-05-31,"shooting_event","East York",2,0
+2023-07-24,"shooting_event","Scarborough",3,0
+2018-01-19,"shooting_event","Scarborough",2,0
+2023-07-03,"shooting_event","East York",4,0
+2020-09-09,"firearm_discharge","Etobicoke",0,0
+2018-12-28,"firearm_discharge","East York",0,0
+2020-06-10,"firearm_discharge","Scarborough",0,0
+2020-12-19,"shooting_event","Scarborough",0,0
+2018-10-21,"shooting_event","North York",0,0
+2019-09-08,"shooting_event","East York",0,1
+2020-09-10,"shooting_event","North York",1,1
+2019-10-23,"firearm_discharge","North York",0,0
+2018-05-14,"firearm_discharge","North York",0,0
+2020-08-19,"shooting_event","Scarborough",0,0
+2019-12-07,"firearm_discharge","Downtown",0,0
+2023-07-25,"firearm_discharge","North York",0,0
+2019-07-20,"shooting_event","Scarborough",2,0
+2018-09-09,"shooting_event","North York",1,0
+2021-03-23,"firearm_discharge","North York",0,0
+2021-09-05,"firearm_discharge","Etobicoke",0,0
+2018-08-14,"shooting_event","Etobicoke",1,0
+2022-10-28,"firearm_discharge","North York",0,0
+2018-07-04,"shooting_event","East York",2,0
+2019-09-13,"shooting_event","Downtown",2,0
+2021-07-06,"shooting_event","Scarborough",1,0
+2020-11-21,"firearm_discharge","East York",0,0
+2020-01-30,"firearm_discharge","Downtown",0,0
+2021-01-14,"firearm_discharge","East York",0,0
+2021-01-31,"firearm_discharge","North York",0,0
+2018-01-14,"firearm_discharge","North York",0,0
+2023-04-03,"shooting_event","Scarborough",1,0
+2018-09-22,"firearm_discharge","Downtown",0,0
+2023-12-02,"firearm_discharge","North York",0,0
+2021-04-24,"shooting_event","Etobicoke",0,0
+2019-12-15,"shooting_event","North York",1,1
+2020-10-23,"shooting_event","East York",2,0
+2019-11-30,"firearm_discharge","East York",0,0
+2023-09-24,"shooting_event","North York",2,1
+2022-11-08,"firearm_discharge","Etobicoke",0,0
+2021-02-06,"shooting_event","Etobicoke",2,0
+2019-10-10,"shooting_event","East York",1,0
+2023-01-04,"shooting_event","Downtown",0,0
+2018-09-28,"firearm_discharge","East York",0,0
+2023-04-11,"firearm_discharge","East York",0,0
+2019-03-11,"shooting_event","North York",0,0
+2021-04-20,"firearm_discharge","Scarborough",0,0
+2018-04-21,"firearm_discharge","Scarborough",0,0
+2019-01-27,"shooting_event","Etobicoke",0,0
+2023-01-09,"firearm_discharge","Downtown",0,0
+2019-01-29,"firearm_discharge","East York",0,0
+2018-01-16,"firearm_discharge","Etobicoke",0,0
+2023-06-20,"firearm_discharge","Scarborough",0,0
+2020-04-10,"shooting_event","East York",1,0
+2019-04-01,"firearm_discharge","Etobicoke",0,0
+2020-12-03,"shooting_event","North York",1,0
+2019-03-13,"firearm_discharge","Scarborough",0,0
+2021-07-15,"firearm_discharge","Downtown",0,0
+2023-02-06,"shooting_event","Scarborough",2,1
+2020-04-07,"shooting_event","Etobicoke",1,0
+2020-12-23,"shooting_event","Etobicoke",1,0
+2018-08-17,"shooting_event","Etobicoke",2,0
+2021-03-16,"firearm_discharge","North York",0,0
+2020-10-26,"shooting_event","Scarborough",0,0
+2022-11-03,"firearm_discharge","East York",0,0
+2022-10-11,"shooting_event","North York",0,0
+2023-06-06,"shooting_event","Etobicoke",0,0
+2021-08-31,"firearm_discharge","Scarborough",0,0
+2022-04-23,"shooting_event","North York",4,0
+2023-10-17,"shooting_event","East York",3,0
+2021-04-10,"shooting_event","East York",1,0
+2022-03-28,"firearm_discharge","Scarborough",0,0
+2021-04-29,"firearm_discharge","Downtown",0,0
+2018-05-22,"firearm_discharge","Etobicoke",0,0
+2019-06-16,"firearm_discharge","East York",0,0
+2021-06-06,"firearm_discharge","Scarborough",0,0
+2020-06-01,"shooting_event","Scarborough",0,0
+2021-09-25,"shooting_event","Scarborough",0,0
+2022-10-26,"shooting_event","North York",1,0
+2019-08-27,"shooting_event","North York",0,0
+2019-10-30,"firearm_discharge","Scarborough",0,0
+2019-10-28,"firearm_discharge","East York",0,0
+2020-10-06,"shooting_event","East York",1,0
+2018-02-16,"firearm_discharge","Etobicoke",0,0
+2018-09-19,"shooting_event","East York",1,0
+2021-04-03,"firearm_discharge","North York",0,0
+2018-06-29,"shooting_event","East York",1,0
+2019-06-19,"firearm_discharge","North York",0,0
+2021-04-08,"firearm_discharge","Scarborough",0,0
+2021-10-13,"firearm_discharge","Etobicoke",0,0
+2021-05-15,"shooting_event","Etobicoke",2,0
+2020-07-31,"firearm_discharge","Downtown",0,0
+2022-04-18,"shooting_event","Downtown",1,0
+2018-10-27,"firearm_discharge","Etobicoke",0,0
+2023-03-11,"shooting_event","East York",1,0
+2023-01-21,"firearm_discharge","North York",0,0
+2020-12-10,"shooting_event","North York",0,0
+2021-07-26,"shooting_event","Scarborough",1,0
+2021-05-03,"firearm_discharge","Downtown",0,0
+2021-03-31,"firearm_discharge","North York",0,0
+2018-09-19,"firearm_discharge","Downtown",0,0
+2021-01-11,"shooting_event","Downtown",1,0
+2022-10-15,"shooting_event","North York",0,0
+2021-04-14,"firearm_discharge","East York",0,0
+2021-09-14,"firearm_discharge","Etobicoke",0,0
+2018-10-30,"firearm_discharge","Scarborough",0,0
+2019-09-15,"firearm_discharge","Etobicoke",0,0
+2021-06-13,"shooting_event","Downtown",0,0
+2021-07-13,"shooting_event","East York",2,0
+2023-09-26,"firearm_discharge","North York",0,0
+2022-01-02,"shooting_event","East York",1,0
+2021-05-30,"shooting_event","East York",0,1
+2021-12-10,"firearm_discharge","East York",0,0
+2022-01-18,"firearm_discharge","North York",0,0
+2022-11-13,"shooting_event","East York",0,0
+2021-02-25,"firearm_discharge","Scarborough",0,0
+2018-04-04,"firearm_discharge","East York",0,0
+2018-10-20,"firearm_discharge","East York",0,0
+2019-10-11,"shooting_event","Downtown",0,0
+2020-10-24,"shooting_event","East York",2,0
+2023-05-30,"firearm_discharge","East York",0,0
+2020-11-14,"shooting_event","Scarborough",1,0
+2021-05-05,"shooting_event","Etobicoke",2,0
+2021-05-26,"firearm_discharge","Etobicoke",0,0
+2021-07-30,"firearm_discharge","Downtown",0,0
+2021-07-20,"shooting_event","Downtown",1,0
+2018-12-17,"firearm_discharge","North York",0,0
