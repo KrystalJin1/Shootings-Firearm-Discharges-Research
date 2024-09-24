@@ -29,5 +29,5 @@ download_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
 download_data
 
 #### Save data ####
-write_csv(download_data,"~/Desktop/Shootings-Firearm-Discharges-Research/data/raw_data/Shootings_data.csv") 
+write_csv(download_data,"data/raw_data/Shootings_data.csv") 
          

@@ -1,13 +1,11 @@
 ---
-title: "My title"
+title: "An Analysis of Shootings and Firearm Discharges in Toronto"
 subtitle: "My subtitle if needed"
-author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
-date: today
+author: Jin Zhang
+thanks: "Code and data are available at: https://github.com/KrystalJin1/Shootings-Firearm-Discharges-Research.git"
+date: September 24, 2024
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "In this paper, we study the shootings and firearm incidents that were reported in Toronto from 2018 to 2023. Our research shows important patterns over time and across different neighborhoods, highlighting places and seasons with higher risk of shootings. The data suggests there may be a connection between the number of incidents and the economic situation in different areas of the city. The aim of this report is to give the Toronto Police Service detailed information that can help improve policing and safety in specific locations and during certain times."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -19,198 +17,93 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-library(palmerpenguins)
+library(modelsummary)
 ```
 
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
+You can and should cross-reference sections and sub-sections. We use @citeR to analyze and @rohan.
 
-The remainder of this paper is structured as follows. @sec-data....
+The remainder of this paper is structured as follows. in @sec-data we explain where the data comes from and the background around it. Then, we show our results by using graphs and tables to present the data. Finally, we talk about what these findings mean, suggest ideas for future studies, and give a conclusion.
+
+
+Shootings and firearm discharges are becoming a bigger problem in Toronto, especially in the city's urban areas. It is very important for policymakers, the police, and the community to understand the reasons behind these incidents. By looking at the data on these events, we can find patterns that may help in creating better strategies to reduce gun violence.
+
+In this study, we look at incidents reported from 2018 to 2023. Our goal is to find trends over time and in different places to see which neighborhoods and periods are more dangerous. This paper also tries to explore if there is a connection between time factors  and the rise in gun-related incidents in Toronto.
 
 
 
 # Data {#sec-data}
 
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+Some of our data is about shootings and injuries in Toronto (@fig-deaths-injuries), 
+sourced from @opendatatoronto
 
 ```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
+#| label: fig-deaths-injuries
+#| fig-cap: Distribution of Deaths and Injuries by Time Range
 #| echo: false
 
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
+download_data <- read_csv(here::here("data","raw_data","Shootings_data.csv"))
+
+# Ensure that the DEATH and INJURIES columns are of numeric and then calculate the total number of people
+download_data <- download_data %>%
+  mutate(
+    DEATH = as.numeric(DEATH),    
+    INJURIES = as.numeric(INJURIES),
+    total_people = ifelse(is.na(DEATH), 0, DEATH) + ifelse(is.na(INJURIES), 0, INJURIES)  
+  )
+
+
+# Plot Bar chart to show the total number of accidents in different time 
+ggplot(download_data, aes(x = OCC_TIME_RANGE, y = total_people, fill = OCC_TIME_RANGE)) + 
+  geom_bar(stat = "identity",alpha = 1) + 
+  scale_fill_manual(values = c("darkgrey", "bisque3", "darkslategray3", "lightpink3")) +
+  labs(title = "Total Number of Deaths and Injuries by Time Range", 
+       x = "Time Range", y = "Total Number of People Involved") + 
+  theme_minimal()
+```
+```{r}
+#| label: fig-deaths-injuries2
+#| fig-cap: Distribution of Deaths and Injuries by Time Range
+#| echo: false
+
+
+yearly_data <- download_data %>%
+  group_by(OCC_YEAR) %>%
+  summarise(total_people = sum(total_people, na.rm = TRUE))
+
+ggplot(yearly_data, aes(x = OCC_YEAR, y = total_people)) + 
+  geom_line(color = "steelblue", size = 1) + 
+  geom_point(color = "steelblue", size = 2) + 
+  labs(title = "Total Number of Deaths and Injuries by Year", 
+       x = "Year", y = "Total Number of People Involved") + 
+  theme_minimal()
 ```
 
 Talk more about it.
 
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+We show more details using visualizations. For example, in the graph (@fig-deaths-injuries), different colors are used to represent the total number of deaths and injuries during various time periods. This makes it easier to see the trend clearly.
+
 
 ```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
+#| label: Summary table of the shooting data
+#| fig-cap: Summary table of the shooting data
 #| echo: false
-#| warning: false
-#| message: false
 
-analysis_data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
+summary_table <- download_data %>%
+  select( DEATH, INJURIES, OCC_HOUR) %>%
+  rename(
+    `Number of Deaths` = DEATH,
+    `Number of Injuries` = INJURIES,
+    `Hour of Occurrence` = OCC_HOUR
+  ) %>%
+  datasummary_skim(histogram = FALSE) 
 
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
+summary_table
 ```
 
 Talk way more about it. 
-
-
-
-# Model
-
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
-
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
-)
-```
-
-
-
-
-# Discussion
-
-## First discussion point {#sec-first-point}
-
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
-
-## Second discussion point
-
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
-
-\newpage
-
-\appendix
-
-# Appendix {-}
-
-
-# Additional data details
-
-# Model details {#sec-model-details}
-
-## Posterior predictive check
-
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
-
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
-
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
-
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
-```
-
-## Diagnostics
-
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
-
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
-
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
-
-plot(first_model, "trace")
-
-plot(first_model, "rhat")
-```
-
 
 
 \newpage

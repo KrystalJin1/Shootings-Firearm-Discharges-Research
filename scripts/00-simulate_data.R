@@ -49,6 +49,6 @@ data <- tibble(
 
 print(head(data))
 
-write.csv(data,"~/Desktop/Shootings-Firearm-Discharges-Research/data/raw_data/simulated_shooting_data.csv", row.names = FALSE)
+write.csv()
 
 
