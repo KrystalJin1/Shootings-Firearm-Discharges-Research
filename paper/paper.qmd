@@ -219,7 +219,7 @@ In summary, our analysis of Toronto shootings and gun discharges from 2004 to 20
 # Appendix: Data Cleaning Process
 
 ## Initial Data Cleaning
-The first step involves loading the original dataset, normalizing and simplifying the column names. This makes the data easier to analyze. Only the most important variables were kept.
+The first step involves loading the original dataset, normalizing and simplifying the column names. This makes the data easier to analyze. Only the most important variables were kept.For this paper, we used the data from 2004 to 2024, cleaned, and processed using R packages like `dplyr`[@citedplyr].
 Here is the explanation of the variables we have selected:
 
 **year**: Represents the year in which the shooting incident occurred. This variable is crucial for identifying yearly trends and analyzing changes in gun violence over time.
