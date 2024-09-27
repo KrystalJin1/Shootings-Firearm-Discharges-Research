@@ -1,10 +1,10 @@
 ---
-title: "Analysis of Shootings and Firearm Discharges in Toronto"
+title: "Rising Gun Violence in Toronto: An Analysis of Shootings and Firearm Discharges"
 author: Jin Zhang
 thanks: "Code and data are available at: https://github.com/KrystalJin1/Shootings-Firearm-Discharges-Research.git"
 date: September 24, 2024
 date-format: long
-abstract: "In this paper, we study reported shootings and gun incidents in Toronto from 2018 to 2024. Our analysis identifies key trends over time and in different neighborhoods, showing areas of higher risk, seasons, and times of day. The data indicates a possible relationship between the number of incidents and different areas of Toronto, as well as the time of day. This study provides important insights that will help the Toronto Police Service improve security measures and effectively target high-risk locations with increased police presence."
+abstract: "In this paper, we study reported shootings and gun incidents in Toronto from 2004 to 2024. Our analysis identifies key trends over time in different neighborhoods, showing higher-risk areas, seasons, and times of day. The data suggest that there may be a relationship between these factors. This study provides important insights that will help the Toronto Police Service improve security measures and effectively target high-risk areas through increased police presence."
 format: pdf
 toc: true
 toc-depth: 3
@@ -25,11 +25,9 @@ library(ggplot2)
 
 
 # Introduction
-We used @citeR to analyze the data and plot the graphs for this paper. The folder structure for this paper follows the startup folder created by @rohan. It is very helpful in keeping everything organized. I also referenced many of the examples and techniques provided by @alexander2023telling, which helped me understand how to visualize the data and communicate the findings effectively. We used @citedplyr to process and transform the dataset for this paper efficiently, which made it easier to filter, group, and summarize the data. In addition, the @citetidyverse packages is essential for simplifying data cleaning and analysis, providing a consistent framework for working with data in R. These tools help to organize and present data efficiently. I also plotted the graphs with @citeggplot2 and read the csv file with @citehere
+We used R [@citeR] programming language to analyze the data and plot the graphs for this paper. The folder structure for this paper follows the startup folder created by [@rohan]. It is very helpful in keeping everything organized. I also referenced many of the examples and techniques provided by @alexander2023telling, which helped me understand how to visualize the data and communicate the findings effectively. We used `dplyr` [@citedplyr] to process and transform the dataset for this paper efficiently, which made it easier to filter, group, and summarize the data. In addition, the `tidyverse` [@citetidyverse] packages is essential for simplifying data cleaning and analysis.`styler` [@citestyler] used in arranging code style. These tools help to organize and present data efficiently. I also plotted the graphs with ggplot2 [@citeggplot2] and read the csv file with `here` [@citehere].
 
-Shootings and gun discharges have become a growing concern in Toronto. The increase in gun-related incidents not only threatens public safety, but also stresses policymakers, law enforcement and local communities.  Detailed analysis of data related to shooting incidents can reveal important insights to help identify high-risk areas and times and provide solutions to reduce violence.
-
-Despite the growing concern about gun violence, the public remains poorly informed about how specific factors such as time and place influence gun violence. In this paper, I analyze Toronto's reported shooting and gun discharge incidents between 2018 and 2024 and provide the public with relevant information in a brief, easy-to-read chart. We utilize “year” and “month” variables to reveal trends in the number of victims over time and utilize latitude and longitude data to map the density of victims in order to determine which regions and time periods are at a higher risk of having a shooting incident. In addition, we explore the relationship between the hours of the day and the number of related cases.
+Shootings and gun discharges have become a growing concern in Toronto, but the public remains poorly informed about how specific factors such as time and place influence gun violence. The increase in gun-related incidents not only threatens public safety but also stresses policymakers, law enforcement, and local communities. Detailed analysis of data related to shooting incidents can show high-risk areas and times and provide solutions to reduce violence. In this paper, I analyze Toronto's reported shooting and gun discharge incidents between 2004 and 2024 and provide the public with relevant information in a brief, easy-to-read chart. We utilize “year”, “month” and “hour” variables to reveal trends in the number of victims over time and utilize latitude and longitude data to map the density of victims in order to determine which regions and time periods are at a higher risk of having a shooting incident. 
 
 Data on shooting incidents over the past two decades show fluctuations in the number of victims from year to year, but the number of the events has increased in recent years. The frequency of shootings is significantly higher during the summer months, and the incidents tend to occur at night, especially between 9:00 p.m. and 2:00 a.m. The data shows that the most dangerous areas are centered in the downtown area. The data show that the most dangerous areas are concentrated in the city centers. These findings highlight specific times and places that may require increased attention in terms of crime prevention and security measures.
 
@@ -38,10 +36,13 @@ The rest of the paper is structured as follows: in @sec-data, we describe the so
 
 # Data {#sec-data}
 
-## Source and Measurement
+## Source
 The dataset analyzed in this study, the "Shootings & Firearm Discharges" dataset, was retrieved from Open Data Toronto [@citeOpenDataToronto]. This dataset was chosen because it provides detailed information on shooting-related incidents reported to the Toronto Police Service from 2004 to 2024, covering various details like time, location, and number of victims. The information about time and location is particularly useful for identifying trends and pinpointing high-risk periods and locations within the city.This dataset is excellent to help us achieve our research goals.
 
+## Measurement
+Our research focuses on analyzing the relationship between key time and geographic factors (specifically year and time of day) and the incidence of shootings and firearm discharges in Toronto. The **Year** variable allows us to track trends in incident frequency over time, while **Time of day** helps to identify periods of increased risk. In addition, we included **location data (latitude and longitude)** to identify high-risk areas, and **total number of people involved (deaths and injuries)** to measure the level of seriousness of incidents. These variables were chosen to provide a deeper understanding of the gun violence incidents. As detailed explained in Appendix A, the data cleaning process involved several steps to prepare the dataset for analysis.
 
+## Graphs and analysis
 ```{r}
 #| eval: true
 #| label: fig-hist-bar
@@ -83,7 +84,7 @@ ggplot(cleaned_data, aes(x = total_people)) +
 
 @fig-hist-bar-3 describes the **total** number of people involved in each incident using the “total_people” variable. The analysis showed that most incidents resulted in fewer than three victims, suggesting that although shootings are frequent, the number of people involved in each incident is usually small.
 
-\newpage
+
 ```{r}
 #| label: fig-deaths-injuries-year
 #| fig-cap: Trend of Deaths and Injuries by year
@@ -103,7 +104,7 @@ ggplot(year_data, aes(x = year, y = total_people)) +
 ```
 @fig-deaths-injuries-year shows the trend of the total number of people involved in incidents, including deaths and injuries, over the years from 2004 to 2024. In the early 2000s, the number of people involved was quite high, reaching above 250 in 2004. After that, there is a general decrease, especially around 2010, where the number drops to around 150. However, after 2015, the numbers start to rise again, peaking at over 250 in 2019. After 2020, the number of people involved starts to decrease sharply again. This figure shows how the total number of incidents has changed over time, with clear periods of increase and decrease.
 
-
+\newpage
 ```{r}
 #| label: fig-deaths-injuries-month
 #| fig-cap: Distribution of Deaths and Injuries by Month
@@ -142,10 +143,9 @@ ggplot(cleaned_data, aes(x = time_range, y = total_people, fill = time_range)) +
   theme_minimal()
 ```
 
-
+\newpage
 @fig-deaths-injuries-time shows the total number of people involved in shootings and gun incidents at different times of the day. The chart is divided into four time periods: morning, afternoon, evening, and night. The data shows that the majority of incidents occur in the **Evening** and **Night**, where more than 1,500 people are affected. **Afternoon** shows a moderate incidence of incidents, while **morning** has the lowest number of people affected by incidents. TThis pattern suggests that the risk of shooting increases significantly at night, and that heightened attention may be required during these times.
 
-\newpage
 
 ```{r}
 #| label: fig-shootings-by-hour
@@ -214,12 +214,28 @@ In summary, our analysis of Toronto shootings and gun discharges from 2004 to 20
 
 \clearpage
 
-\appendix
+\appendix 
 
 # Appendix: Data Cleaning Process
 
 ## Initial Data Cleaning
-The first step involves loading the original dataset, normalizing and simplifying the column names. This makes the data easier to analyze. Only the most important variables were kept, focusing on information such as the time, location and outcome (e.g., deaths and injuries) of the event.
+The first step involves loading the original dataset, normalizing and simplifying the column names. This makes the data easier to analyze. Only the most important variables were kept.
+Here is the explanation of the variables we have selected:
+
+**year**: Represents the year in which the shooting incident occurred. This variable is crucial for identifying yearly trends and analyzing changes in gun violence over time.
+
+**month**: Indicates the specific month when the incident took place. It useful in seasonal analysis.
+
+**hour**: This variable captures the exact hour of the day when the shooting occurred. It is useful for find the high-risk times of the day and understanding the daily patterns of incidents.
+
+**time_range**: Groups the time of the day into broader categories such as morning, afternoon, evening, and night. This is for a more generalized view of when shootings are most likely to occur.
+
+**death**: The number of deaths resulting from the shooting incident. This variable is important for understanding the fatality rates across incidents.
+
+**injuries**: The count of people injured during the shooting.
+
+**geometry**: This variable contains geographic coordinates (longitude and latitude) that represent the exact location where each shooting or firearm discharge incident occurred.
+
 
 ## Renaming Variables
 Some variables were renamed to make the dataset easier to interpret. For example, `occ_date` was renamed to `date` and `occ_year` was renamed to `year`. Renaming is an important step in ensuring that we label variables clearly.
@@ -229,9 +245,6 @@ A new variable “total_people” was created by adding the values from the `dea
 
 ## Splitting the Geometry Column
 The `geometry` column containing the geographic coordinates is split into two columns: `longitude` and `latitude`. This conversion makes it easier to analyze and plot the
-
-## Saving the Cleaned Dataset
-After cleaning and transforming the data, the final version was saved in a new file.
 
 
 \newpage
