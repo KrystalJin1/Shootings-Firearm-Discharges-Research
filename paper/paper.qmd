@@ -1,12 +1,13 @@
 ---
-title: "An Analysis of Shootings and Firearm Discharges in Toronto"
-subtitle: "My subtitle if needed"
+title: "Analysis of Shootings and Firearm Discharges in Toronto"
 author: Jin Zhang
 thanks: "Code and data are available at: https://github.com/KrystalJin1/Shootings-Firearm-Discharges-Research.git"
 date: September 24, 2024
 date-format: long
-abstract: "In this paper, we study the shootings and firearm incidents that were reported in Toronto from 2018 to 2023. Our research shows important patterns over time and across different neighborhoods, highlighting places and seasons with higher risk of shootings. The data suggests there may be a connection between the number of incidents and the economic situation in different areas of the city. The aim of this report is to give the Toronto Police Service detailed information that can help improve policing and safety in specific locations and during certain times."
+abstract: "In this paper, we study reported shootings and gun incidents in Toronto from 2018 to 2024. Our analysis identifies key trends over time and in different neighborhoods, showing areas of higher risk, seasons, and times of day. The data indicates a possible relationship between the number of incidents and different areas of Toronto, as well as the time of day. This study provides important insights that will help the Toronto Police Service improve security measures and effectively target high-risk locations with increased police presence."
 format: pdf
+toc: true
+toc-depth: 3
 number-sections: true
 bibliography: references.bib
 ---
@@ -17,98 +18,217 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-library(modelsummary)
 ```
 
 
 # Introduction
+We used @citeR to analyze the data and plot the graphs for this paper. The folder structure for this paper follows the startup folder created by @rohan. It is very helpful in keeping everything organized. I also referenced many of the examples and techniques provided by @alexander2023telling, which helped me understand how to visualize the data and communicate the findings effectively. We used @citedplyr to process and transform the dataset for this paper efficiently, which made it easier to filter, group, and summarize the data. In addition, the @citetidyverse packages is essential for simplifying data cleaning and analysis, providing a consistent framework for working with data in R. These tools help to organize and present data efficiently.
 
-You can and should cross-reference sections and sub-sections. We use @citeR to analyze and @rohan.
+Shootings and gun discharges have become a growing concern in Toronto. The increase in gun-related incidents not only threatens public safety, but also stresses policymakers, law enforcement and local communities. Understanding the causes of these events, as well as high-risk areas, is essential to developing strategies to fight gun violence. Detailed analysis of data related to shooting incidents can reveal important insights to help identify high-risk areas and times and provide solutions to reduce violence.
 
-The remainder of this paper is structured as follows. in @sec-data we explain where the data comes from and the background around it. Then, we show our results by using graphs and tables to present the data. Finally, we talk about what these findings mean, suggest ideas for future studies, and give a conclusion.
+Despite the growing concern about gun violence, the public remains poorly informed about how specific factors such as time and place influence gun violence. This requires a more comprehensive analysis of the data. In this paper, I analyze Toronto's reported shooting and gun discharge incidents between 2018 and 2024 and provide the public with relevant information in a brief, easy-to-read chart. We utilize “year” and “month” variables to reveal trends in the number of victims over time and utilize latitude and longitude data to map the density of victims in order to determine which regions and time periods are at a higher risk of having a shooting incident. In addition, we explore the relationship between the hours of the day and the number of related cases.
 
+Data on shooting incidents over the past two decades show fluctuations in the number of victims from year to year, but the number of the incidence has increased in recent years. The frequency of shootings is significantly higher during the summer months, and the incidents tend to occur at night, especially between 9:00 p.m. and 2:00 a.m. The data shows that the most dangerous areas are centered in the downtown area. The data show that the most dangerous areas are concentrated in the city centers. These findings highlight specific times and places that may require increased attention in terms of crime prevention and security measures.
 
-Shootings and firearm discharges are becoming a bigger problem in Toronto, especially in the city's urban areas. It is very important for policymakers, the police, and the community to understand the reasons behind these incidents. By looking at the data on these events, we can find patterns that may help in creating better strategies to reduce gun violence.
-
-In this study, we look at incidents reported from 2018 to 2023. Our goal is to find trends over time and in different places to see which neighborhoods and periods are more dangerous. This paper also tries to explore if there is a connection between time factors  and the rise in gun-related incidents in Toronto.
-
+The rest of the paper is structured as follows: in @sec-data, we describe the source of the dataset and its context in detail. Next, we show our findings through various types of graphs with visualizations. After each chart, we discuss each graph's formation, the significance of the findings, and finally summarize key observations. Finally, there is an appendix and references. By the end of this paper, the reader will have a clearer understanding of trends in gun violence in Toronto and how this data can be utilized to improve safety measures throughout the city.
 
 
 # Data {#sec-data}
 
-Some of our data is about shootings and injuries in Toronto (@fig-deaths-injuries), 
-sourced from @opendatatoronto
+## Source and Measurement
+The dataset analyzed in this study, the "Shootings & Firearm Discharges" dataset, was retrieved from Open Data Toronto [@citeOpenDataToronto]. This dataset was chosen because it provides detailed information on shooting-related incidents reported to the Toronto Police Service from 2004 to 2024, covering various details like time, location, and number of victims. The information about time and location is particularly useful for identifying trends and pinpointing high-risk periods and locations within the city.This dataset is excellent to help us achieve our research goals.
+
 
 ```{r}
-#| label: fig-deaths-injuries
-#| fig-cap: Distribution of Deaths and Injuries by Time Range
+#| eval: true 
+#| label: fig-hist-bar
+#| fig-cap: "Visualization of Events and People Involved in Shootings and Firearm Discharges"
+#| fig-subcap: ["Number of Events by Year", "Number of Events by Time Range", "Total People Involved"]
+#| layout-ncol: 3
 #| echo: false
+#| warning: false
+#| message: false 
 
-download_data <- read_csv(here::here("data","raw_data","Shootings_data.csv"))
+cleaned_data <- read_csv(here::here("data","analysis_data","cleaned_shootings_data.csv"))
 
-# Ensure that the DEATH and INJURIES columns are of numeric and then calculate the total number of people
-download_data <- download_data %>%
-  mutate(
-    DEATH = as.numeric(DEATH),    
-    INJURIES = as.numeric(INJURIES),
-    total_people = ifelse(is.na(DEATH), 0, DEATH) + ifelse(is.na(INJURIES), 0, INJURIES)  
-  )
-
-
-# Plot Bar chart to show the total number of accidents in different time 
-ggplot(download_data, aes(x = OCC_TIME_RANGE, y = total_people, fill = OCC_TIME_RANGE)) + 
-  geom_bar(stat = "identity",alpha = 1) + 
-  scale_fill_manual(values = c("darkgrey", "bisque3", "darkslategray3", "lightpink3")) +
-  labs(title = "Total Number of Deaths and Injuries by Time Range", 
-       x = "Time Range", y = "Total Number of People Involved") + 
+# Panel (a) - Histogram for year
+ggplot(cleaned_data, aes(x = year)) +
+  geom_histogram(binwidth = 1, fill = "steelblue", color = "white") +
+  labs(x = "Year", y = "Count", title = "Number of Events by Year") +
   theme_minimal()
+
+# Panel (b) - Bar plot for time_range
+
+# Convert 'time_range' to a factor and order it from morning to night
+cleaned_data$time_range <- factor(cleaned_data$time_range, levels = c("Morning", "Afternoon", "Evening", "Night"))
+
+ggplot(cleaned_data, aes(x = time_range, fill = time_range)) +
+  geom_bar(stat = "count") +
+  labs(x = "Time Range", y = "Count", title = "Number of Events by Time Range") +
+  scale_fill_manual(values = c("steelblue", "lightblue", "darkblue", "blue")) +
+  theme_minimal()
+
+# Panel (c) - Histogram for total_people
+ggplot(cleaned_data, aes(x = total_people)) +
+  geom_histogram(binwidth = 1, fill = "steelblue", color = "white") +
+  labs(x = "Total People Involved", y = "Count", title = "Total People Involved") +
+  theme_minimal()
+
+
 ```
+@fig-hist-bar provides an overall view of the number of shooting incidents, victims involved, and time distribution in Toronto from 2004 to 2024.  @fig-hist-bar-1 shows the number of incidents by year**, using the variable “year” to plot the distribution of incidents over time. The results suggest that the number of incidents has increased significantly in recent years, possibly as a result of poor regulation.
+
+@fig-hist-bar-2 represents the **number of events by time range**, based on the `time_range` and 'total_people' variable. This plot reveals that nighttime is a particularly dangerous period for shootings and firearm discharges.
+
+@fig-hist-bar-3 describes the **total** number of people involved in each incident using the “total_people” variable. The analysis showed that most incidents resulted in fewer than three victims, suggesting that although shootings are frequent, the number of people involved in each incident is usually small.
+
+\newpage
 ```{r}
-#| label: fig-deaths-injuries2
-#| fig-cap: Distribution of Deaths and Injuries by Time Range
+#| label: fig-deaths-injuries-year
+#| fig-cap: Trend of Deaths and Injuries by year
 #| echo: false
+#| warning: false
+#| message: false
 
-
-yearly_data <- download_data %>%
-  group_by(OCC_YEAR) %>%
+yearly_data <- cleaned_data %>%
+  group_by(year) %>%
   summarise(total_people = sum(total_people, na.rm = TRUE))
 
-ggplot(yearly_data, aes(x = OCC_YEAR, y = total_people)) + 
+ggplot(yearly_data, aes(x = year, y = total_people)) + 
   geom_line(color = "steelblue", size = 1) + 
   geom_point(color = "steelblue", size = 2) + 
-  labs(title = "Total Number of Deaths and Injuries by Year", 
-       x = "Year", y = "Total Number of People Involved") + 
+  labs(x = "Year", y = "Total Number of People Involved") + 
   theme_minimal()
 ```
-
-Talk more about it.
-
-We show more details using visualizations. For example, in the graph (@fig-deaths-injuries), different colors are used to represent the total number of deaths and injuries during various time periods. This makes it easier to see the trend clearly.
+@fig-deaths-injuries-year shows the trend of the total number of people involved in incidents, including deaths and injuries, over the years from 2004 to 2024. In the early 2000s, the number of people involved was quite high, reaching above 250 in 2004. After that, there is a general decrease, especially around 2010, where the number drops to around 150. However, after 2015, the numbers start to rise again, peaking at over 250 in 2019. After 2020, the number of people involved starts to decrease sharply again. This figure shows how the total number of incidents has changed over time, with clear periods of increase and decrease.
 
 
 ```{r}
-#| label: Summary table of the shooting data
-#| fig-cap: Summary table of the shooting data
+#| label: fig-deaths-injuries-month
+#| fig-cap: Distribution of Deaths and Injuries by Month
 #| echo: false
+#| warning: false
+#| message: false 
 
-summary_table <- download_data %>%
-  select( DEATH, INJURIES, OCC_HOUR) %>%
-  rename(
-    `Number of Deaths` = DEATH,
-    `Number of Injuries` = INJURIES,
-    `Hour of Occurrence` = OCC_HOUR
-  ) %>%
-  datasummary_skim(histogram = FALSE) 
+# Convert 'month' to a factor and order it chronologically
+cleaned_data$month <- factor(cleaned_data$month, levels = month.name)
 
-summary_table
+# Plot Bar chart to show the total number of accidents in different months
+ggplot(cleaned_data, aes(x = month, y = total_people, fill = month)) +
+  geom_bar(stat = "identity", fill = "steelblue", alpha = 1) +
+  labs(x = "Month", y = "Total Number of People Involved") +
+  coord_flip() +
+  theme_minimal()
+```
+@fig-deaths-injuries-month shows the total number of shootings and gun discharges by month. The chart uses the “month” variable to show the distribution of incidents throughout the year. From the graph we can observe that the number of shooting victims peaks in the summer months, especially in July and August. This shows that shootings tend to occur more frequently in the warmer months, which may be due to an increase in outdoor activities. Winter months have significantly fewer incidents, suggesting that there may be a seasonal pattern to gun violence in Toronto.
+
+
+```{r}
+#| label: fig-deaths-injuries-time
+#| fig-cap: Distribution of Deaths and Injuries by Time Range
+#| echo: false
+#| warning: false
+#| message: false 
+
+# Convert 'time_range' to a factor and order it from morning to night
+cleaned_data$time_range <- factor(cleaned_data$time_range, levels = c("Morning", "Afternoon", "Evening", "Night"))
+
+# Plot Bar chart to show the total number of accidents in different time ranges
+ggplot(cleaned_data, aes(x = time_range, y = total_people, fill = time_range)) + 
+  geom_bar(stat = "identity", alpha = 1) + 
+  scale_fill_manual(values = c("steelblue", "bisque3", "darkslategray3", "lightpink3"), name = "Time Range") + 
+  labs(x = "Time Range", y = "Total Number of People Involved") + 
+  theme_minimal()
 ```
 
-Talk way more about it. 
+
+@fig-deaths-injuries-time shows the total number of people involved in shootings and gun incidents at different times of the day. The chart is divided into four time periods: morning, afternoon, evening, and night. The data shows that the majority of incidents occur in the **Evening** and **Night**, where more than 1,500 people are affected. **Afternoon** shows a moderate incidence of incidents, while **morning** has the lowest number of people affected by incidents. This pattern suggests that the risk of shooting increases significantly later in the day, particularly at night, and that heightened attention may be required during these times.
+
+
+
+```{r}
+#| label: fig-shootings-by-hour
+#| fig-cap: "Shootings Distribution by Hour of Day"
+#| echo: false
+#| warning: false
+#| message: false
+
+hourly_data <- cleaned_data %>%
+  filter(!is.na(hour)) %>%  # Remove rows where hour contains NA
+  group_by(hour) %>%
+  summarise(total_events = n()) #Counts the number of rows (events) for each hour group.
+
+# Plot polar bar chart
+ggplot(hourly_data, aes(x = as.factor(hour), y = total_events)) +
+  geom_bar(stat = "identity", fill = "steelblue") +  # Fill bars with blue color
+  coord_polar(start = 0) +  # Convert to polar coordinates
+  labs(x = "Hour of Day", y = "Number of Shootings") +
+  theme_minimal()
+
+```
+@fig-shootings-by-hour shows the number of shooting incidents that occurred during different hours of the day. Most shootings happen between **9 PM (21:00)** and **midnight (23:00)**, where the number of incidents is higher than at other times, reaching above 500 incidents at 23:00. The number of incidents decreases in the morning hours, with fewer shootings happening between **6 AM (6:00)** and **12 PM (12:00)**. This graph shows the hours have higher risk for shootings  during the day.
+
+
+```{r}
+#| label: fig-shootings-by-map
+#| fig-cap: "Map of Shootings Highlighted by Risk Level"
+#| echo: false
+#| warning: false
+#| message: false
+
+# Filter out unreasonable latitude and longitude values (for Toronto region)
+map_data <- cleaned_data %>%
+  filter(Longitude < -70 & Longitude > -90, Latitude > 40 & Latitude < 45)
+
+# Create a Risk_Level column, assuming 'DEATH' and 'INJURIES' columns indicate casualties
+map_data <- map_data %>%
+  mutate(Risk_Level = case_when(
+    death > 0 ~ "High Risk",  # Define as high risk if there is a death
+    injuries > 2 ~ "High Risk",  # Define as high risk if there are more than 2 injuries
+    TRUE ~ "Low Risk"  # Otherwise, define as low risk
+  ))
+
+# Plot the map using the newly created Risk_Level column
+ggplot(map_data, aes(x = Longitude, y = Latitude, color = Risk_Level)) +
+  geom_point(alpha = 0.8, size = 0.7) + 
+  scale_color_manual(values = c("High Risk" = "brown2", "Low Risk" = "steelblue")) +  # Manually set colors
+  labs(title = "Map of Incidents Highlighted by Risk Level",
+       x = "Longitude", y = "Latitude",
+       color = "Theft Risk Level") +  
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = "white"),  
+        legend.position = "right",  # Place legend on the right
+        plot.title = element_text(hjust = 0.5, face = "bold"))  
+
+```
+@fig-shootings-by-map shows the geographic distribution of shootings in Toronto, categorized by risk level. Events with more than two deaths or injuries are defined as high risk. The map uses blue dots to indicate low-risk incidents and red dots to indicate high-risk incidents. The map shows that most incidents are categorized as low risk. High-risk incidents tend to occur in the central areas of Toronto, where there is a higher density of dots. This map helps us to understand where the shooting incidents are high and to be safe when traveling.
+
 
 
 \newpage
 
+\appendix
 
+# Appendix {-}
+
+## Appendix A: Data Cleaning Process
+
+### Initial Data Cleaning
+The first step involves loading the original dataset, normalizing and simplifying the column names. This makes the data easier to analyze. Only the most important variables were kept, focusing on information such as the time, location and outcome (e.g., deaths and injuries) of the event.
+
+### Renaming Variables
+Some variables were renamed to make the dataset easier to interpret. For example, `occ_date` was renamed to `date` and `occ_year` was renamed to `year`. Renaming is an important step in ensuring that we label variables clearly.
+
+### Creating the total_people Variable
+A new variable “total_people” was created by adding the values from the `deaths` and `injuries` columns. If one of the columns had missing data (i.e., an NA value), it was replaced with a zero. This adjustment provides a more complete and accurate view of the total number of people affected in each incident.
+
+### Splitting the Geometry Column
+The `geometry` column containing the geographic coordinates is split into two columns: `longitude` and `latitude`. This conversion makes it easier to analyze and plot the
+
+### Saving the Cleaned Dataset
+After cleaning and transforming the data, the final version was saved in a new file.
+
+
+\newpage
 # References
-
 

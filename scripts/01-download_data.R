@@ -2,7 +2,7 @@
 # Purpose: Downloads and saves the data from Toronto Open Data
 # Author: Jin Zhang
 # Date: 23 Septenmber 2024
-# Contact: kry.zhang@utoronto.ca
+# Contact: kry.zhang@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: None
 # Any other information needed? None
@@ -15,7 +15,6 @@ library(dplyr)
 
 # get package
 package <- show_package("4bc5511d-0ecf-487a-9214-7b2359ad8f61")
-package
 
 # get all resources for this package
 resources <- list_package_resources("4bc5511d-0ecf-487a-9214-7b2359ad8f61")
@@ -26,7 +25,6 @@ datastore_resources <- filter(resources,
 
 # load the first datastore resource as a sample
 download_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
-download_data
 
 #### Save data ####
 write_csv(download_data,"data/raw_data/Shootings_data.csv") 
